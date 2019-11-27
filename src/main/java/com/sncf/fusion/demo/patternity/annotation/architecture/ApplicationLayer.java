@@ -1,0 +1,10 @@
+package com.sncf.fusion.demo.patternity.annotation.architecture;
+
+import java.lang.annotation.*;
+
+@Retention(RetentionPolicy.CLASS)
+@Documented
+@Target(ElementType.PACKAGE)
+public @interface ApplicationLayer {
+    String[] domainLayer() default {};
+}
